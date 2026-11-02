@@ -1,0 +1,34 @@
+{
+  "name": "Small Academic Demonstration Dataset",
+  "description": "8 parcels and 5 delivery locations designed for clear step-by-step manual verification of DP table and TSP tour.",
+  "depot_id": "DEPOT",
+  "truck_weight_capacity_kg": 15.0,
+  "truck_volume_capacity_l": 50.0,
+  "nodes": [
+    { "id": "DEPOT", "name": "Central Logistics Depot", "x": 0.0, "y": 0.0, "is_depot": true, "service_time_mins": 0.0 },
+    { "id": "LOC-A", "name": "North Medical Clinic", "x": 2.0, "y": 4.0, "is_depot": false, "service_time_mins": 5.0 },
+    { "id": "LOC-B", "name": "East Tech Park", "x": 5.0, "y": 2.0, "is_depot": false, "service_time_mins": 5.0 },
+    { "id": "LOC-C", "name": "South Harbor District", "x": 3.0, "y": -3.0, "is_depot": false, "service_time_mins": 5.0 },
+    { "id": "LOC-D", "name": "West Financial Center", "x": -3.0, "y": 1.0, "is_depot": false, "service_time_mins": 5.0 }
+  ],
+  "edges": [
+    { "source": "DEPOT", "destination": "LOC-A", "distance": 4.5, "bidirectional": true },
+    { "source": "DEPOT", "destination": "LOC-B", "distance": 5.4, "bidirectional": true },
+    { "source": "DEPOT", "destination": "LOC-C", "distance": 4.2, "bidirectional": true },
+    { "source": "DEPOT", "destination": "LOC-D", "distance": 3.2, "bidirectional": true },
+    { "source": "LOC-A", "destination": "LOC-B", "distance": 3.6, "bidirectional": true },
+    { "source": "LOC-B", "destination": "LOC-C", "distance": 5.4, "bidirectional": true },
+    { "source": "LOC-C", "destination": "LOC-D", "distance": 7.2, "bidirectional": true },
+    { "source": "LOC-D", "destination": "LOC-A", "distance": 5.8, "bidirectional": true }
+  ],
+  "parcels": [
+    { "id": "PKG-01", "destination_id": "LOC-A", "priority": "Critical", "deadline_hours": 1.5, "weight": 3.0, "volume": 6.0, "value": 45.0, "description": "Urgent Medical Samples" },
+    { "id": "PKG-02", "destination_id": "LOC-B", "priority": "High", "deadline_hours": 3.0, "weight": 4.0, "volume": 10.0, "value": 35.0, "description": "Server Replacement Unit" },
+    { "id": "PKG-03", "destination_id": "LOC-A", "priority": "Medium", "deadline_hours": 5.0, "weight": 2.0, "volume": 5.0, "value": 18.0, "description": "Office Supplies" },
+    { "id": "PKG-04", "destination_id": "LOC-C", "priority": "High", "deadline_hours": 2.5, "weight": 5.0, "volume": 12.0, "value": 42.0, "description": "Marine Navigation Device" },
+    { "id": "PKG-05", "destination_id": "LOC-D", "priority": "Critical", "deadline_hours": 1.0, "weight": 2.0, "volume": 4.0, "value": 50.0, "description": "Legal Contracts" },
+    { "id": "PKG-06", "destination_id": "LOC-B", "priority": "Low", "deadline_hours": 8.0, "weight": 6.0, "volume": 15.0, "value": 15.0, "description": "Bulk Marketing Flyers" },
+    { "id": "PKG-07", "destination_id": "LOC-C", "priority": "Medium", "deadline_hours": 4.0, "weight": 3.0, "volume": 7.0, "value": 24.0, "description": "Automotive Sensor Kit" },
+    { "id": "PKG-08", "destination_id": "LOC-D", "priority": "Low", "deadline_hours": 7.0, "weight": 4.0, "volume": 9.0, "value": 16.0, "description": "Retail Merchandise" }
+  ]
+}

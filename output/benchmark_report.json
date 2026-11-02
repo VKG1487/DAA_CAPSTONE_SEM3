@@ -1,0 +1,224 @@
+{
+  "sorting": {
+    "sizes": [
+      10,
+      25,
+      50,
+      100,
+      250,
+      500,
+      1000
+    ],
+    "mergesort_times_ms": [
+      0.0905,
+      0.246,
+      0.671,
+      1.2483,
+      4.4331,
+      9.9919,
+      20.9587
+    ],
+    "quicksort_times_ms": [
+      0.0679,
+      0.1494,
+      0.3535,
+      1.2591,
+      2.6254,
+      9.1612,
+      14.1893
+    ],
+    "timsort_times_ms": [
+      0.0146,
+      0.0276,
+      0.0549,
+      0.1835,
+      0.2684,
+      0.7601,
+      1.4422
+    ],
+    "mergesort_comparisons": [
+      24,
+      89,
+      223,
+      547,
+      1674,
+      3843,
+      8704
+    ],
+    "quicksort_comparisons": [
+      33,
+      107,
+      262,
+      652,
+      2091,
+      4675,
+      10426
+    ]
+  },
+  "knapsack_dp": {
+    "n_items": [
+      5,
+      10,
+      20,
+      35,
+      50,
+      75,
+      100
+    ],
+    "capacity_kg": 50.0,
+    "runtimes_ms": [
+      0.2635,
+      0.4074,
+      0.9504,
+      1.4264,
+      2.1405,
+      3.4881,
+      3.8458
+    ],
+    "cell_evaluations": [
+      306,
+      561,
+      1071,
+      1836,
+      2601,
+      3876,
+      5151
+    ]
+  },
+  "dijkstra": {
+    "v_nodes": [
+      5,
+      10,
+      20,
+      35,
+      50,
+      80
+    ],
+    "runtimes_ms": [
+      0.038,
+      0.035,
+      0.0656,
+      0.1731,
+      0.2884,
+      0.8417
+    ]
+  },
+  "tsp_routing": {
+    "k_stops": [
+      4,
+      6,
+      8,
+      12,
+      16,
+      20,
+      25
+    ],
+    "nn_times_ms": [
+      0.0408,
+      0.0234,
+      0.0245,
+      0.0726,
+      0.0744,
+      0.1025,
+      0.1429
+    ],
+    "two_opt_times_ms": [
+      0.0144,
+      0.0152,
+      0.0359,
+      0.0935,
+      0.2034,
+      0.4567,
+      0.4997
+    ],
+    "nn_distances_km": [
+      80.35,
+      83.59,
+      92.88,
+      126.92,
+      145.41,
+      168.72,
+      174.19
+    ],
+    "opt2_distances_km": [
+      80.35,
+      83.59,
+      87.25,
+      117.06,
+      134.91,
+      136.0,
+      159.57
+    ]
+  },
+  "scenarios": [
+    {
+      "total_parcels_evaluated": 8,
+      "parcels_selected_for_trip": 5,
+      "parcels_deferred": 3,
+      "total_cargo_weight_kg": 15.0,
+      "weight_capacity_kg": 15.0,
+      "weight_utilization_pct": 100.0,
+      "total_cargo_volume_l": 34.0,
+      "volume_capacity_l": 0.0,
+      "volume_utilization_pct": 0.0,
+      "total_trip_utility_value": 159.44,
+      "fractional_upper_bound": 164.66,
+      "tour_stops_count": 5,
+      "total_route_distance_km": 21.7,
+      "estimated_driving_mins": 57.2,
+      "runtimes_ms": {
+        "sorting": 0.0559,
+        "knapsack_dp": 0.137,
+        "tsp_routing": 0.1019,
+        "total_pipeline": 0.447
+      },
+      "scenario_name": "Small (8 parcels, 5 nodes)"
+    },
+    {
+      "total_parcels_evaluated": 25,
+      "parcels_selected_for_trip": 13,
+      "parcels_deferred": 12,
+      "total_cargo_weight_kg": 42.6,
+      "weight_capacity_kg": 40.0,
+      "weight_utilization_pct": 106.5,
+      "total_cargo_volume_l": 101.0,
+      "volume_capacity_l": 0.0,
+      "volume_utilization_pct": 0.0,
+      "total_trip_utility_value": 500.04,
+      "fractional_upper_bound": 488.28,
+      "tour_stops_count": 11,
+      "total_route_distance_km": 70.4,
+      "estimated_driving_mins": 172.7,
+      "runtimes_ms": {
+        "sorting": 0.2243,
+        "knapsack_dp": 0.7588,
+        "tsp_routing": 0.465,
+        "total_pipeline": 1.773
+      },
+      "scenario_name": "Medium (25 parcels, 12 nodes)"
+    },
+    {
+      "total_parcels_evaluated": 100,
+      "parcels_selected_for_trip": 29,
+      "parcels_deferred": 71,
+      "total_cargo_weight_kg": 82.5,
+      "weight_capacity_kg": 80.0,
+      "weight_utilization_pct": 103.1,
+      "total_cargo_volume_l": 194.7,
+      "volume_capacity_l": 0.0,
+      "volume_utilization_pct": 0.0,
+      "total_trip_utility_value": 1389.17,
+      "fractional_upper_bound": 1370.88,
+      "tour_stops_count": 23,
+      "total_route_distance_km": 149.1,
+      "estimated_driving_mins": 371.6,
+      "runtimes_ms": {
+        "sorting": 1.5241,
+        "knapsack_dp": 6.2146,
+        "tsp_routing": 3.9883,
+        "total_pipeline": 13.106
+      },
+      "scenario_name": "Large (100 parcels, 35 nodes)"
+    }
+  ]
+}

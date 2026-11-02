@@ -1,0 +1,593 @@
+{
+  "name": "Medium City Courier Scenario",
+  "description": "25 prioritized packages across 12 delivery points in a metropolitan distribution network.",
+  "depot_id": "DEPOT",
+  "truck_weight_capacity_kg": 40.0,
+  "truck_volume_capacity_l": 120.0,
+  "nodes": [
+    {
+      "id": "DEPOT",
+      "name": "Central Hub",
+      "x": 0.0,
+      "y": 0.0,
+      "is_depot": true,
+      "service_time_mins": 0.0
+    },
+    {
+      "id": "LOC-01",
+      "name": "Airport Logistics",
+      "x": 8.0,
+      "y": 6.0,
+      "is_depot": false,
+      "service_time_mins": 5.0
+    },
+    {
+      "id": "LOC-02",
+      "name": "Metro General Hospital",
+      "x": -4.0,
+      "y": 7.0,
+      "is_depot": false,
+      "service_time_mins": 6.0
+    },
+    {
+      "id": "LOC-03",
+      "name": "Downtown Shopping Complex",
+      "x": 3.0,
+      "y": -5.0,
+      "is_depot": false,
+      "service_time_mins": 4.0
+    },
+    {
+      "id": "LOC-04",
+      "name": "Suburban Residential North",
+      "x": -2.0,
+      "y": 10.0,
+      "is_depot": false,
+      "service_time_mins": 5.0
+    },
+    {
+      "id": "LOC-05",
+      "name": "Industrial Sector East",
+      "x": 10.0,
+      "y": 1.0,
+      "is_depot": false,
+      "service_time_mins": 7.0
+    },
+    {
+      "id": "LOC-06",
+      "name": "South Port Terminal",
+      "x": 1.0,
+      "y": -9.0,
+      "is_depot": false,
+      "service_time_mins": 8.0
+    },
+    {
+      "id": "LOC-07",
+      "name": "University Campus",
+      "x": -7.0,
+      "y": -3.0,
+      "is_depot": false,
+      "service_time_mins": 4.0
+    },
+    {
+      "id": "LOC-08",
+      "name": "Financial District",
+      "x": 2.0,
+      "y": 3.0,
+      "is_depot": false,
+      "service_time_mins": 4.0
+    },
+    {
+      "id": "LOC-09",
+      "name": "West Residential Suburb",
+      "x": -9.0,
+      "y": 4.0,
+      "is_depot": false,
+      "service_time_mins": 5.0
+    },
+    {
+      "id": "LOC-10",
+      "name": "Technology Corridor",
+      "x": 6.0,
+      "y": -2.0,
+      "is_depot": false,
+      "service_time_mins": 5.0
+    },
+    {
+      "id": "LOC-11",
+      "name": "Northwest Clinic",
+      "x": -5.0,
+      "y": 2.0,
+      "is_depot": false,
+      "service_time_mins": 4.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "DEPOT",
+      "destination": "LOC-01",
+      "distance": 12.0,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-02",
+      "distance": 8.9,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-03",
+      "distance": 6.7,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-04",
+      "distance": 11.6,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-05",
+      "distance": 12.2,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-06",
+      "distance": 10.9,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-07",
+      "distance": 9.4,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-08",
+      "distance": 4.0,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-09",
+      "distance": 11.5,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-10",
+      "distance": 7.0,
+      "bidirectional": true
+    },
+    {
+      "source": "DEPOT",
+      "destination": "LOC-11",
+      "distance": 6.1,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-01",
+      "destination": "LOC-04",
+      "distance": 12.7,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-01",
+      "destination": "LOC-05",
+      "distance": 5.9,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-01",
+      "destination": "LOC-08",
+      "distance": 7.6,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-01",
+      "destination": "LOC-10",
+      "distance": 9.9,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-02",
+      "destination": "LOC-04",
+      "distance": 4.3,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-02",
+      "destination": "LOC-07",
+      "distance": 11.8,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-02",
+      "destination": "LOC-08",
+      "distance": 8.6,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-02",
+      "destination": "LOC-09",
+      "distance": 7.1,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-02",
+      "destination": "LOC-11",
+      "distance": 5.6,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-03",
+      "destination": "LOC-05",
+      "distance": 11.3,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-03",
+      "destination": "LOC-06",
+      "distance": 5.4,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-03",
+      "destination": "LOC-07",
+      "distance": 11.7,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-03",
+      "destination": "LOC-08",
+      "distance": 9.1,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-03",
+      "destination": "LOC-10",
+      "distance": 5.3,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-03",
+      "destination": "LOC-11",
+      "distance": 12.2,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-04",
+      "destination": "LOC-08",
+      "distance": 9.0,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-04",
+      "destination": "LOC-09",
+      "distance": 10.3,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-04",
+      "destination": "LOC-11",
+      "distance": 10.5,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-05",
+      "destination": "LOC-08",
+      "distance": 9.8,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-05",
+      "destination": "LOC-10",
+      "distance": 6.1,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-06",
+      "destination": "LOC-07",
+      "distance": 12.1,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-06",
+      "destination": "LOC-10",
+      "distance": 10.2,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-07",
+      "destination": "LOC-08",
+      "distance": 13.5,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-07",
+      "destination": "LOC-09",
+      "distance": 8.4,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-07",
+      "destination": "LOC-11",
+      "distance": 6.4,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-08",
+      "destination": "LOC-10",
+      "distance": 7.8,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-08",
+      "destination": "LOC-11",
+      "distance": 8.4,
+      "bidirectional": true
+    },
+    {
+      "source": "LOC-09",
+      "destination": "LOC-11",
+      "distance": 5.5,
+      "bidirectional": true
+    }
+  ],
+  "parcels": [
+    {
+      "id": "PKG-01",
+      "destination_id": "LOC-02",
+      "priority": "Medium",
+      "deadline_hours": 6.8,
+      "weight": 2.4,
+      "volume": 4.6,
+      "value": 21.1,
+      "description": "Medical Diagnostic Kit"
+    },
+    {
+      "id": "PKG-02",
+      "destination_id": "LOC-03",
+      "priority": "Low",
+      "deadline_hours": 11.3,
+      "weight": 3.7,
+      "volume": 10.2,
+      "value": 15.7,
+      "description": "Server Motherboard"
+    },
+    {
+      "id": "PKG-03",
+      "destination_id": "LOC-10",
+      "priority": "High",
+      "deadline_hours": 2.9,
+      "weight": 6.6,
+      "volume": 16.3,
+      "value": 49.3,
+      "description": "Urgent Legal Documents"
+    },
+    {
+      "id": "PKG-04",
+      "destination_id": "LOC-11",
+      "priority": "Medium",
+      "deadline_hours": 6.1,
+      "weight": 3.8,
+      "volume": 7.2,
+      "value": 26.1,
+      "description": "Laboratory Specimens"
+    },
+    {
+      "id": "PKG-05",
+      "destination_id": "LOC-01",
+      "priority": "Medium",
+      "deadline_hours": 4.9,
+      "weight": 5.6,
+      "volume": 8.9,
+      "value": 28.1,
+      "description": "Automotive ECU Module"
+    },
+    {
+      "id": "PKG-06",
+      "destination_id": "LOC-06",
+      "priority": "Medium",
+      "deadline_hours": 5.6,
+      "weight": 6.5,
+      "volume": 15.3,
+      "value": 21.7,
+      "description": "High-End Camera Lens"
+    },
+    {
+      "id": "PKG-07",
+      "destination_id": "LOC-03",
+      "priority": "High",
+      "deadline_hours": 3.5,
+      "weight": 4.9,
+      "volume": 8.4,
+      "value": 71.0,
+      "description": "Biotech Vaccines"
+    },
+    {
+      "id": "PKG-08",
+      "destination_id": "LOC-07",
+      "priority": "High",
+      "deadline_hours": 3.6,
+      "weight": 4.5,
+      "volume": 12.8,
+      "value": 49.2,
+      "description": "Corporate Laptops"
+    },
+    {
+      "id": "PKG-09",
+      "destination_id": "LOC-02",
+      "priority": "High",
+      "deadline_hours": 4.5,
+      "weight": 4.0,
+      "volume": 10.5,
+      "value": 44.8,
+      "description": "Architecture Blueprints"
+    },
+    {
+      "id": "PKG-10",
+      "destination_id": "LOC-10",
+      "priority": "Critical",
+      "deadline_hours": 1.2,
+      "weight": 4.6,
+      "volume": 9.6,
+      "value": 87.2,
+      "description": "Pharmaceutical Supplies"
+    },
+    {
+      "id": "PKG-11",
+      "destination_id": "LOC-02",
+      "priority": "Low",
+      "deadline_hours": 9.6,
+      "weight": 6.2,
+      "volume": 9.4,
+      "value": 24.6,
+      "description": "Precision CNC Tooling"
+    },
+    {
+      "id": "PKG-12",
+      "destination_id": "LOC-07",
+      "priority": "Medium",
+      "deadline_hours": 6.1,
+      "weight": 4.8,
+      "volume": 8.0,
+      "value": 26.7,
+      "description": "Telecom Router"
+    },
+    {
+      "id": "PKG-13",
+      "destination_id": "LOC-03",
+      "priority": "Critical",
+      "deadline_hours": 1.0,
+      "weight": 5.3,
+      "volume": 15.7,
+      "value": 88.9,
+      "description": "Emergency Cardiac Monitor"
+    },
+    {
+      "id": "PKG-14",
+      "destination_id": "LOC-04",
+      "priority": "High",
+      "deadline_hours": 2.7,
+      "weight": 6.1,
+      "volume": 13.8,
+      "value": 61.9,
+      "description": "Optical Fiber Spool"
+    },
+    {
+      "id": "PKG-15",
+      "destination_id": "LOC-01",
+      "priority": "Critical",
+      "deadline_hours": 2.1,
+      "weight": 5.7,
+      "volume": 13.1,
+      "value": 81.6,
+      "description": "Designer Apparel"
+    },
+    {
+      "id": "PKG-16",
+      "destination_id": "LOC-05",
+      "priority": "Medium",
+      "deadline_hours": 6.0,
+      "weight": 3.2,
+      "volume": 9.5,
+      "value": 22.8,
+      "description": "Industrial Bearings"
+    },
+    {
+      "id": "PKG-17",
+      "destination_id": "LOC-02",
+      "priority": "High",
+      "deadline_hours": 3.0,
+      "weight": 1.5,
+      "volume": 3.9,
+      "value": 59.9,
+      "description": "Audit Dossier"
+    },
+    {
+      "id": "PKG-18",
+      "destination_id": "LOC-03",
+      "priority": "Low",
+      "deadline_hours": 9.7,
+      "weight": 5.0,
+      "volume": 14.6,
+      "value": 11.9,
+      "description": "Retail Consumer Goods"
+    },
+    {
+      "id": "PKG-19",
+      "destination_id": "LOC-04",
+      "priority": "High",
+      "deadline_hours": 4.2,
+      "weight": 2.3,
+      "volume": 5.3,
+      "value": 54.8,
+      "description": "Solar Inverter Controller"
+    },
+    {
+      "id": "PKG-20",
+      "destination_id": "LOC-08",
+      "priority": "Medium",
+      "deadline_hours": 5.6,
+      "weight": 3.2,
+      "volume": 9.1,
+      "value": 36.8,
+      "description": "Hospital Sanitizer Batch"
+    },
+    {
+      "id": "PKG-21",
+      "destination_id": "LOC-04",
+      "priority": "Critical",
+      "deadline_hours": 1.3,
+      "weight": 4.5,
+      "volume": 8.3,
+      "value": 73.5,
+      "description": "Lithium Battery Pack"
+    },
+    {
+      "id": "PKG-22",
+      "destination_id": "LOC-06",
+      "priority": "Critical",
+      "deadline_hours": 2.1,
+      "weight": 1.4,
+      "volume": 2.2,
+      "value": 62.4,
+      "description": "Security Firewall Device"
+    },
+    {
+      "id": "PKG-23",
+      "destination_id": "LOC-10",
+      "priority": "Critical",
+      "deadline_hours": 1.4,
+      "weight": 2.3,
+      "volume": 3.9,
+      "value": 86.8,
+      "description": "Satellite Transceiver"
+    },
+    {
+      "id": "PKG-24",
+      "destination_id": "LOC-11",
+      "priority": "Medium",
+      "deadline_hours": 5.0,
+      "weight": 3.4,
+      "volume": 5.6,
+      "value": 31.8,
+      "description": "Specialty Chemistry Samples"
+    },
+    {
+      "id": "PKG-25",
+      "destination_id": "LOC-11",
+      "priority": "High",
+      "deadline_hours": 3.3,
+      "weight": 5.4,
+      "volume": 13.6,
+      "value": 56.3,
+      "description": "E-Commerce Express Delivery"
+    }
+  ]
+}
