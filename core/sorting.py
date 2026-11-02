@@ -178,3 +178,4 @@ def compare_sorting_algorithms(
 
     # Best choice: MergeSort provides guaranteed O(N log N) stability for tie-breaking
     return ms_result, stats
+

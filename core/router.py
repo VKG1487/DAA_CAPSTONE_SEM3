@@ -36,8 +36,12 @@ class RouteOptimizer:
         """
         t0 = time.perf_counter()
 
-        # Identify unique delivery destinations among selected parcels
-        destination_nodes = sorted(list(set(p.destination_id for p in selected_parcels)))
+        # Ensure depot exists in graph
+        if depot_id not in self.graph.nodes and self.graph.nodes:
+            depot_id = list(self.graph.nodes.keys())[0]
+
+        # Identify unique delivery destinations among selected parcels that exist in graph
+        destination_nodes = sorted(list(set(p.destination_id for p in selected_parcels if p.destination_id in self.graph.nodes)))
 
         # Remove depot if it was accidentally listed as a destination
         destination_nodes = [node for node in destination_nodes if node != depot_id]
@@ -182,3 +186,4 @@ class RouteOptimizer:
         for i in range(len(tour) - 1):
             tot += dist_matrix[tour[i]][tour[i + 1]]
         return round(tot, 2)
+

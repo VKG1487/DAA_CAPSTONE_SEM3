@@ -114,3 +114,4 @@ A road segment $e = (u, v) \in \mathcal{E}$ connects two nodes:
 1. **Capacity Invariant**: The aggregate weight $\sum_{p \in \mathcal{S}} w(p) \le W_{\max}$ and volume $\sum_{p \in \mathcal{S}} v(p) \le V_{\max}$.
 2. **Tour Invariant**: The vehicle tour $\mathcal{T} = \langle v_0, v_{\pi(1)}, v_{\pi(2)}, \dots, v_{\pi(K)}, v_0 \rangle$ must begin and end at the Depot $v_0$ and visit every unique destination $\text{dest}(p)$ for all $p \in \mathcal{S}$ at least once.
 3. **Optimality Invariant**: The DP packing solution must yield utility greater than or equal to any greedy discrete heuristic, and within the continuous upper bound established by Fractional Knapsack relaxation.
+

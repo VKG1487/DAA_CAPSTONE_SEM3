@@ -117,3 +117,4 @@ To identify the selected items:
 | **Computational Class** | Pseudo-polynomial $\mathcal{O}(N \cdot W)$ | Polynomial $\mathcal{O}(N \log N)$ |
 
 **Conclusion:** The greedy fractional relaxation proves that no discrete combination can ever exceed $164.66$. Our DP solution achieves $159.44$, which is the exact integer optimum.
+

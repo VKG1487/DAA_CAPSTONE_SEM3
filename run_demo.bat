@@ -10,3 +10,4 @@ echo Running Unit Test Suite...
 python -m unittest discover tests
 echo.
 pause
+

@@ -134,3 +134,4 @@ class DeliveryTrip:
     weight_capacity_kg: float = 0.0
     volume_capacity_l: float = 0.0
     dp_matrix: Optional[List[List[float]]] = None
+

@@ -267,3 +267,4 @@ python -m unittest discover tests
 | **Phase 4 (20 Marks)** | Small & large test cases, runtime charts, correctness evidence, optimization. | [docs/PHASE_4_PERFORMANCE.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_4_PERFORMANCE.md), [benchmarks/benchmark.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/benchmarks/benchmark.py), `output/*.png` | **20 / 20** |
 | **Phase 5 (20 Marks)** | Result explanation, documentation quality, classic UI, demonstration, originality. | [docs/PHASE_5_FINAL_REPORT.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_5_FINAL_REPORT.md), [app.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/app.py), [main.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/main.py) | **20 / 20** |
 | **TOTAL** | Complete Capstone Solution | Fully Verified & Operational | **100 / 100** |
+

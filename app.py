@@ -553,6 +553,7 @@ with tab3:
         st.markdown("#### Optimized Delivery Route Visualization")
         fig = engine.plot_route_map(report)
         st.pyplot(fig)
+        plt.close(fig)
 
     with col_route:
         st.markdown("#### TSP Route Sequence & Quality")

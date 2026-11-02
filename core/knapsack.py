@@ -93,10 +93,11 @@ def solve_01_knapsack_dp(
     t0 = time.perf_counter()
 
     # Discretize weights to positive integers for DP table indexing
-    scaled_capacity = max(1, int(round(weight_capacity * scale_factor)))
+    import math
+    scaled_capacity = max(1, int(math.floor(round(weight_capacity * scale_factor, 4))))
     n = len(parcels)
 
-    weights = [max(1, int(round(p.weight * scale_factor))) for p in parcels]
+    weights = [max(1, int(math.ceil(round(p.weight * scale_factor, 4)))) for p in parcels]
     if value_mode == "monetary":
         values = [round(p.value, 2) for p in parcels]
     else:
@@ -132,6 +133,15 @@ def solve_01_knapsack_dp(
     # Separate selected and unselected
     selected_parcels = [parcels[idx] for idx in selected_indices]
     unselected_parcels = [parcels[idx] for idx in range(n) if idx not in selected_indices]
+
+    # Ensure real continuous weight constraint is strictly respected
+    tot_weight = sum(p.weight for p in selected_parcels)
+    if tot_weight > weight_capacity:
+        selected_parcels.sort(key=lambda p: (p.value if value_mode == "monetary" else p.composite_score) / max(p.weight, 0.1))
+        while tot_weight > weight_capacity and selected_parcels:
+            dropped = selected_parcels.pop(0)
+            unselected_parcels.append(dropped)
+            tot_weight -= dropped.weight
 
     # Handle volume capacity if specified (filter if volume exceeded)
     if volume_capacity is not None and volume_capacity > 0:
@@ -210,3 +220,4 @@ def solve_fractional_knapsack_greedy(
         "upper_bound_value": round(total_val, 2),
         "execution_time_ms": round(elapsed_ms, 4)
     }
+

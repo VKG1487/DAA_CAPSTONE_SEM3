@@ -119,3 +119,4 @@ The search iterates until no 2-opt inversion yields further reduction (local opt
 
 - **Total Route Distance**: **21.70 km**
 - **Estimated Vehicle Duration**: 57.2 minutes (37.2 mins driving @ 35 km/h + 20 mins customer drop-off service time).
+

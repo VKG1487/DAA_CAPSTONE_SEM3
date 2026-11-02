@@ -6,3 +6,4 @@ echo   Launching Classic Academic Web Dashboard (Streamlit)...
 echo =======================================================================
 python -m streamlit run app.py
 pause
+

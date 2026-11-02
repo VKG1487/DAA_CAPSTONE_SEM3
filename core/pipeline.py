@@ -262,3 +262,4 @@ class CourierPlanningEngine:
             fig.savefig(output_file, dpi=300, facecolor=fig.get_facecolor(), bbox_inches='tight')
 
         return fig
+

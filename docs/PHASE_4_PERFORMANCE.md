@@ -117,3 +117,4 @@ Capacity fixed at $W = 50.0$ kg (scaled discretization: 51 table columns).
    - In production dispatch centers, the physical road graph remains static across delivery shifts. Precomputing all-pairs shortest paths offline via Contraction Hierarchies (CH) enables sub-millisecond distance lookups.
 3. **Fleet Expansion (Multi-Vehicle CVRP)**:
    - For multi-vehicle fleets, replace single-tour TSP with the **Clarke-Wright Savings Heuristic** or **Genetic Algorithms** to partition stops among multiple delivery vans.
+
