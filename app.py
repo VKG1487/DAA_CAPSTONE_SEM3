@@ -348,7 +348,7 @@ with sb_c2:
         <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
     </div>
     """, unsafe_allow_html=True)
-st.sidebar.caption("© 2026 Vibhash Kumar Giri • DAA Capstone")
+st.sidebar.caption("Design and Analysis of Algorithms (DAA) Capstone")
 
 # -----------------------------------------------------------------------------
 # RUN PIPELINE
@@ -778,7 +778,7 @@ st.markdown(f"""
         </div>
         <div style="text-align: right; font-size: 12px; color: #718096; line-height: 1.5;">
             <div><strong>Design and Analysis of Algorithms (DAA) Capstone Project</strong></div>
-            <div>&copy; 2026 Vibhash Kumar Giri. All rights reserved.</div>
+            <div>Department of Computer Science & Engineering</div>
         </div>
     </div>
 </div>

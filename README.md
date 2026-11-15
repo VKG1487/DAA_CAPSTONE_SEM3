@@ -221,7 +221,6 @@ This project was implemented by **Vibhash Kumar Giri** as a comprehensive capsto
   <strong>Vibhash Kumar Giri</strong> &bull; <a href="mailto:vibhash1487@gmail.com">vibhash1487@gmail.com</a><br>
   <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/">LinkedIn</a> &bull;
   <a href="https://github.com/VKG1487">GitHub</a> &bull;
-  <a href="https://leetcode.com/VKG1487">LeetCode</a><br>
-  <sub>&copy; 2026 Vibhash Kumar Giri &bull; DAA Capstone Project. All rights reserved.</sub>
+  <a href="https://leetcode.com/VKG1487">LeetCode</a>
 </p>
 

@@ -279,6 +279,5 @@ python -m unittest discover tests
 - **GitHub:** [github.com/VKG1487](https://github.com/VKG1487)
 - **LeetCode:** [leetcode.com/VKG1487](https://leetcode.com/VKG1487)
 - **Role:** Algorithm Architect & Full-Stack Developer
-- **Academic Project:** Design and Analysis of Algorithms (DAA) Capstone Project  
-*&copy; 2026 Vibhash Kumar Giri. All rights reserved.*
+- **Academic Project:** Design and Analysis of Algorithms (DAA) Capstone Project
 

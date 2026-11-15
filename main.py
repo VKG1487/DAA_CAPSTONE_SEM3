@@ -169,7 +169,6 @@ def run_full_demonstration(scenario_path: str = "data/small_dataset.json", capac
     print("Developer: Vibhash Kumar Giri | Contact: vibhash1487@gmail.com")
     print("GitHub: https://github.com/VKG1487 | LeetCode: https://leetcode.com/VKG1487")
     print("LinkedIn: https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/")
-    print("DAA Capstone Project (c) 2026. All rights reserved.")
     print("=" * 76)
 
 
