@@ -197,45 +197,31 @@ st.markdown(CLASSIC_CSS, unsafe_allow_html=True)
 # =============================================================================
 st.markdown("""
 <div class="header-banner">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
-        <div>
-            <div class="header-title">Intelligent Courier Route & Packing Planning System</div>
-            <div class="header-subtitle">
-                Design and Analysis of Algorithms (DAA) Capstone Project | Integrated Algorithmic Workflow
-            </div>
-            <div class="academic-tag">
-                Algorithms: Multi-Key Sorting &bull; 0/1 Knapsack DP &bull; Min-Heap Dijkstra &bull; Nearest Neighbor TSP &bull; 2-Opt Local Search
-            </div>
-        </div>
-        <div style="text-align: right; margin-top: 4px; padding-left: 12px;">
-            <div style="font-size: 13px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif;">Vibhash Kumar Giri</div>
-            <div style="font-size: 11px; color: #4A5568; font-weight: 600;">Lead Algorithm Developer</div>
-            <div style="font-size: 11px; color: #1B365D;"><a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a></div>
-            <div style="font-size: 11px; margin-top: 3px; display: flex; gap: 6px; justify-content: flex-end;">
-                <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="color: #0A66C2; text-decoration: none; font-weight: 600;">LinkedIn</a> &bull;
-                <a href="https://github.com/VKG1487" target="_blank" style="color: #24292E; text-decoration: none; font-weight: 600;">GitHub</a> &bull;
-                <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
-            </div>
-        </div>
+    <div class="header-title">Intelligent Courier Route & Packing Planning System</div>
+    <div class="header-subtitle">
+        Design and Analysis of Algorithms (DAA) Capstone Project | Integrated Algorithmic Workflow
+    </div>
+    <div class="academic-tag">
+        Algorithms: Multi-Key Sorting &bull; 0/1 Knapsack DP &bull; Min-Heap Dijkstra &bull; Nearest Neighbor TSP &bull; 2-Opt Local Search
     </div>
 </div>
 """, unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
-# HEADER VIEW NAVIGATION (Placed on Header Side)
+# HEADER VIEW NAVIGATION
 # -----------------------------------------------------------------------------
 view_choice = st.radio(
-    "Select System View:",
+    "Navigation:",
     [
         "🚚 Courier Planning System",
         "👨‍💻 Know About Developer"
     ],
     index=0,
     horizontal=True,
-    help="Select active dashboard view"
+    help="Navigate between Courier Planning System and Developer Profile"
 )
 
-st.markdown("<hr style='margin: 10px 0 20px 0; border: none; border-top: 1px solid #CBD5E1;'>", unsafe_allow_html=True)
+st.markdown("<hr style='margin: 8px 0 18px 0; border: none; border-top: 1px solid #CBD5E1;'>", unsafe_allow_html=True)
 
 
 
@@ -352,27 +338,7 @@ def render_courier_planning_system():
 
     use_2opt = st.sidebar.checkbox("Enable 2-Opt TSP Local Search", value=True)
 
-    # -----------------------------------------------------------------------------
-    # SIDEBAR DEVELOPER PROFILE
-    # -----------------------------------------------------------------------------
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("#### Developer Profile")
-    sb_c1, sb_c2 = st.sidebar.columns([1, 2])
-    with sb_c1:
-        if os.path.exists("assets/developer.jpg"):
-            st.image("assets/developer.jpg", width=75)
-    with sb_c2:
-        st.markdown("""
-        **Vibhash Kumar Giri**  
-        <span style="font-size: 11px; color: #4A5568;">Algorithm Developer</span>  
-        <a href="mailto:vibhash1487@gmail.com" style="font-size: 11px; color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a>
-        <div style="font-size: 11px; margin-top: 4px; display: flex; gap: 5px; flex-wrap: wrap;">
-            <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="color: #0A66C2; text-decoration: none; font-weight: 600;">LinkedIn</a> &bull;
-            <a href="https://github.com/VKG1487" target="_blank" style="color: #24292E; text-decoration: none; font-weight: 600;">GitHub</a> &bull;
-            <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
-        </div>
-        """, unsafe_allow_html=True)
-    st.sidebar.caption("Design and Analysis of Algorithms (DAA) Capstone")
+
 
     # -----------------------------------------------------------------------------
     # RUN PIPELINE
@@ -737,62 +703,18 @@ def render_courier_planning_system():
             mime="application/json"
         )
 
-        st.write("")
-        st.markdown("#### Project Developer & System Architect")
-        dev_col1, dev_col2 = st.columns([1, 4])
-        with dev_col1:
-            if os.path.exists("assets/developer.jpg"):
-                st.image("assets/developer.jpg", width=140)
-        with dev_col2:
-            st.markdown("""
-            <div style="background-color: #FFFFFF; border: 1px solid #E2E8F0; padding: 16px 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-                <div style="font-size: 18px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif; margin-bottom: 4px;">
-                    Vibhash Kumar Giri
-                </div>
-                <div style="font-size: 13px; color: #4A5568; margin-bottom: 6px;">
-                    <strong>Role:</strong> Lead Algorithm Architect & Full-Stack Developer
-                </div>
-                <div style="font-size: 13px; color: #4A5568; margin-bottom: 6px;">
-                    <strong>Contact Email:</strong> <a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; font-weight: 600; text-decoration: underline;">vibhash1487@gmail.com</a>
-                </div>
-                <div style="font-size: 13px; color: #4A5568; margin-bottom: 8px;">
-                    <strong>Professional Profiles:</strong>
-                    <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="display: inline-block; background-color: #F8FAFC; border: 1px solid #CBD5E1; color: #0A66C2; padding: 2px 8px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 11px; margin-left: 4px;">LinkedIn</a>
-                    <a href="https://github.com/VKG1487" target="_blank" style="display: inline-block; background-color: #F8FAFC; border: 1px solid #CBD5E1; color: #24292E; padding: 2px 8px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 11px; margin-left: 4px;">GitHub</a>
-                    <a href="https://leetcode.com/VKG1487" target="_blank" style="display: inline-block; background-color: #F8FAFC; border: 1px solid #CBD5E1; color: #B25E00; padding: 2px 8px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 11px; margin-left: 4px;">LeetCode</a>
-                </div>
-                <div style="font-size: 13px; color: #4A5568; margin-bottom: 8px;">
-                    <strong>Project:</strong> Design and Analysis of Algorithms (DAA) Capstone Project
-                </div>
-                <div style="font-size: 12px; color: #718096; line-height: 1.45;">
-                    Engineered an end-to-end intelligent courier planning system integrating multi-criteria sorting, 0/1 Knapsack Dynamic Programming, Dijkstra's algorithm with min-heap priority queues, and TSP approximation with 2-Opt local search refinement.
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
-
 
 # -----------------------------------------------------------------------------
 # VIEW DISPATCH ROUTER
 # -----------------------------------------------------------------------------
 if view_choice == "👨‍💻 Know About Developer":
-    st.sidebar.markdown("### Developer Profile")
-    if os.path.exists("assets/developer.jpg"):
-        st.sidebar.image("assets/developer.jpg", width=120)
-    st.sidebar.markdown("""
-    **Vibhash Kumar Giri**  
-    [vibhash1487@gmail.com](mailto:vibhash1487@gmail.com)  
-
-    [LinkedIn](https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/) &bull; [GitHub](https://github.com/VKG1487) &bull; [LeetCode](https://leetcode.com/VKG1487)
-    """)
-    st.sidebar.caption("Design and Analysis of Algorithms (DAA) Capstone")
-
     render_know_about_developer_page()
 else:
     render_courier_planning_system()
 
 
 # =============================================================================
-# GLOBAL APPLICATION FOOTER (Visible across all tabs)
+# GLOBAL APPLICATION FOOTER: DEVELOPER PROFILE ON FOOTER
 # =============================================================================
 def get_footer_image_b64(path: str) -> str:
     if os.path.exists(path):
@@ -801,27 +723,33 @@ def get_footer_image_b64(path: str) -> str:
     return ""
 
 _dev_b64 = get_footer_image_b64("assets/developer.jpg")
-_img_markup = f'<img src="data:image/jpeg;base64,{_dev_b64}" style="width: 54px; height: 54px; border-radius: 50%; border: 2px solid #CBD5E1; object-fit: cover; box-shadow: 0 1px 3px rgba(0,0,0,0.08);" alt="Vibhash Kumar Giri" />' if _dev_b64 else ''
+_img_markup = f'<img src="data:image/jpeg;base64,{_dev_b64}" style="width: 64px; height: 64px; border-radius: 50%; border: 2.5px solid #1B365D; object-fit: cover; box-shadow: 0 1px 4px rgba(0,0,0,0.08);" alt="Vibhash Kumar Giri" />' if _dev_b64 else ''
 
 st.markdown(f"""
-<div style="margin-top: 55px; padding: 22px 26px; background-color: #F8F9FA; border: 1px solid #E2E8F0; border-top: 2px solid #1B365D; border-radius: 4px;">
+<div style="margin-top: 55px; padding: 22px 28px; background-color: #F8F9FA; border: 1px solid #CBD5E1; border-top: 3px solid #1B365D; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
+    <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #718096; margin-bottom: 12px;">
+        Developer Profile
+    </div>
     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
-        <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 18px;">
             {_img_markup}
             <div>
-                <div style="font-size: 15px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif; margin-bottom: 2px;">
+                <div style="font-size: 16px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif; margin-bottom: 2px;">
                     Vibhash Kumar Giri
                 </div>
+                <div style="font-size: 12.5px; font-weight: 600; color: #4A5568; margin-bottom: 4px;">
+                    Lead Algorithm Developer & Full-Stack Engineer
+                </div>
                 <div style="font-size: 12px; color: #4A5568;">
-                    Lead Developer &bull; <a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; font-weight: 600; text-decoration: underline;">vibhash1487@gmail.com</a>
+                    <strong>Email:</strong> <a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; font-weight: 600; text-decoration: underline;">vibhash1487@gmail.com</a>
                     &bull; <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="color: #0A66C2; text-decoration: none; font-weight: 600;">LinkedIn</a>
                     &bull; <a href="https://github.com/VKG1487" target="_blank" style="color: #24292E; text-decoration: none; font-weight: 600;">GitHub</a>
                     &bull; <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
                 </div>
             </div>
         </div>
-        <div style="text-align: right; font-size: 12px; color: #718096; line-height: 1.5;">
-            <div><strong>Design and Analysis of Algorithms (DAA) Capstone Project</strong></div>
+        <div style="text-align: right; font-size: 12px; color: #718096; line-height: 1.55;">
+            <div style="font-weight: 700; color: #1B365D;">Design and Analysis of Algorithms (DAA) Capstone Project</div>
             <div>Department of Computer Science & Engineering</div>
         </div>
     </div>
