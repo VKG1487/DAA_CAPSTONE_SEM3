@@ -198,6 +198,11 @@ DAA CAPSTONE/
       <h3 style="margin: 0 0 6px 0; color: #1B365D;">Vibhash Kumar Giri</h3>
       <p style="margin: 0 0 4px 0; color: #4A5568; font-weight: 600;">Lead Developer & Algorithm Architect</p>
       <p style="margin: 0 0 4px 0; color: #4A5568;"><strong>Email:</strong> <a href="mailto:vibhash1487@gmail.com">vibhash1487@gmail.com</a></p>
+      <p style="margin: 0 0 4px 0; color: #4A5568;"><strong>Profiles:</strong> 
+        <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/">LinkedIn</a> &bull; 
+        <a href="https://github.com/VKG1487">GitHub</a> &bull; 
+        <a href="https://leetcode.com/VKG1487">LeetCode</a>
+      </p>
       <p style="margin: 0 0 4px 0; color: #4A5568;"><strong>Course:</strong> Design and Analysis of Algorithms (DAA) Capstone Project</p>
       <p style="margin: 0; color: #718096; font-size: 13px;">Responsible for end-to-end mathematical modeling, multi-key sorting, 0/1 Knapsack Dynamic Programming, Dijkstra's algorithm with min-heap priority queues, and 2-Opt TSP approximation.</p>
     </td>
@@ -213,7 +218,10 @@ This project was implemented by **Vibhash Kumar Giri** as a comprehensive capsto
 
 <p align="center">
   <img src="assets/developer.jpg" width="48" height="48" style="border-radius: 50%; vertical-align: middle; margin-right: 10px;" />
-  <strong>Vibhash Kumar Giri</strong> &bull; <a href="mailto:vibhash1487@gmail.com">vibhash1487@gmail.com</a> &bull; <em>DAA Capstone Project</em><br>
-  <sub>&copy; 2026 Vibhash Kumar Giri. All rights reserved.</sub>
+  <strong>Vibhash Kumar Giri</strong> &bull; <a href="mailto:vibhash1487@gmail.com">vibhash1487@gmail.com</a><br>
+  <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/">LinkedIn</a> &bull;
+  <a href="https://github.com/VKG1487">GitHub</a> &bull;
+  <a href="https://leetcode.com/VKG1487">LeetCode</a><br>
+  <sub>&copy; 2026 Vibhash Kumar Giri &bull; DAA Capstone Project. All rights reserved.</sub>
 </p>
 

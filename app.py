@@ -210,6 +210,11 @@ st.markdown("""
             <div style="font-size: 13px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif;">Vibhash Kumar Giri</div>
             <div style="font-size: 11px; color: #4A5568; font-weight: 600;">Lead Algorithm Developer</div>
             <div style="font-size: 11px; color: #1B365D;"><a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a></div>
+            <div style="font-size: 11px; margin-top: 3px; display: flex; gap: 6px; justify-content: flex-end;">
+                <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="color: #0A66C2; text-decoration: none; font-weight: 600;">LinkedIn</a> &bull;
+                <a href="https://github.com/VKG1487" target="_blank" style="color: #24292E; text-decoration: none; font-weight: 600;">GitHub</a> &bull;
+                <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
+            </div>
         </div>
     </div>
 </div>
@@ -337,6 +342,11 @@ with sb_c2:
     **Vibhash Kumar Giri**  
     <span style="font-size: 11px; color: #4A5568;">Algorithm Developer</span>  
     <a href="mailto:vibhash1487@gmail.com" style="font-size: 11px; color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a>
+    <div style="font-size: 11px; margin-top: 4px; display: flex; gap: 5px; flex-wrap: wrap;">
+        <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="color: #0A66C2; text-decoration: none; font-weight: 600;">LinkedIn</a> &bull;
+        <a href="https://github.com/VKG1487" target="_blank" style="color: #24292E; text-decoration: none; font-weight: 600;">GitHub</a> &bull;
+        <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
+    </div>
     """, unsafe_allow_html=True)
 st.sidebar.caption("© 2026 Vibhash Kumar Giri • DAA Capstone")
 
@@ -722,6 +732,12 @@ with tab5:
                 <strong>Contact Email:</strong> <a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; font-weight: 600; text-decoration: underline;">vibhash1487@gmail.com</a>
             </div>
             <div style="font-size: 13px; color: #4A5568; margin-bottom: 8px;">
+                <strong>Professional Profiles:</strong>
+                <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="display: inline-block; background-color: #F8FAFC; border: 1px solid #CBD5E1; color: #0A66C2; padding: 2px 8px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 11px; margin-left: 4px;">LinkedIn</a>
+                <a href="https://github.com/VKG1487" target="_blank" style="display: inline-block; background-color: #F8FAFC; border: 1px solid #CBD5E1; color: #24292E; padding: 2px 8px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 11px; margin-left: 4px;">GitHub</a>
+                <a href="https://leetcode.com/VKG1487" target="_blank" style="display: inline-block; background-color: #F8FAFC; border: 1px solid #CBD5E1; color: #B25E00; padding: 2px 8px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 11px; margin-left: 4px;">LeetCode</a>
+            </div>
+            <div style="font-size: 13px; color: #4A5568; margin-bottom: 8px;">
                 <strong>Project:</strong> Design and Analysis of Algorithms (DAA) Capstone Project
             </div>
             <div style="font-size: 12px; color: #718096; line-height: 1.45;">
@@ -753,7 +769,10 @@ st.markdown(f"""
                     Vibhash Kumar Giri
                 </div>
                 <div style="font-size: 12px; color: #4A5568;">
-                    Lead Developer &bull; Email: <a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; font-weight: 600; text-decoration: underline;">vibhash1487@gmail.com</a>
+                    Lead Developer &bull; <a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; font-weight: 600; text-decoration: underline;">vibhash1487@gmail.com</a>
+                    &bull; <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="color: #0A66C2; text-decoration: none; font-weight: 600;">LinkedIn</a>
+                    &bull; <a href="https://github.com/VKG1487" target="_blank" style="color: #24292E; text-decoration: none; font-weight: 600;">GitHub</a>
+                    &bull; <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
                 </div>
             </div>
         </div>

@@ -275,6 +275,9 @@ python -m unittest discover tests
 ## 8. Developer & Contact Information
 - **Lead Developer:** Vibhash Kumar Giri
 - **Email:** [vibhash1487@gmail.com](mailto:vibhash1487@gmail.com)
+- **LinkedIn:** [vibhash-kumar-giri-8a7243381](https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/)
+- **GitHub:** [github.com/VKG1487](https://github.com/VKG1487)
+- **LeetCode:** [leetcode.com/VKG1487](https://leetcode.com/VKG1487)
 - **Role:** Algorithm Architect & Full-Stack Developer
 - **Academic Project:** Design and Analysis of Algorithms (DAA) Capstone Project  
 *&copy; 2026 Vibhash Kumar Giri. All rights reserved.*
