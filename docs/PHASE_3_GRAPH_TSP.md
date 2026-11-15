@@ -2,7 +2,6 @@
 
 **Course:** Design and Analysis of Algorithms (DAA) Capstone Project  
 **Module:** Route Maker and Graph Processing (Dijkstra's Algorithm & TSP Approximation)  
-**Marks Allocation:** 20 Marks  
 
 ---
 

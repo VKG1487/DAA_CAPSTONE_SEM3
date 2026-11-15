@@ -1,6 +1,5 @@
 # Intelligent Courier Route & Packing Planning System
 ### Design and Analysis of Algorithms (DAA) Capstone Project
-**Score Rubric:** 100 Marks (Phases 1 to 5, 20 Marks Each)
 
 ---
 
@@ -19,16 +18,16 @@ The user interface is designed with a **classic, human-engineered editorial aest
 
 ---
 
-## Phase Breakdown & Evaluation Rubric (100 Marks)
+## Project Phase Breakdown
 
-| Phase | Title | Core Tasks Completed | Evidence & Artifacts | Marks |
+| Phase | Title | Core Tasks Completed | Evidence & Artifacts | Status |
 | :---: | :--- | :--- | :--- | :---: |
-| **Phase 1** | Courier Problem Design and Planning | Mathematical formulation, parcel attribute schema, delivery node & graph design, pipeline architecture. | [PHASE_1_DESIGN.md](docs/PHASE_1_DESIGN.md), [models.py](core/models.py) | **20 / 20** |
-| **Phase 2** | Package Prioritization and Box Filling | Multi-key MergeSort/QuickSort, 0/1 Knapsack DP recurrence, step-by-step DP table output, backtracking manifest, greedy fractional bound. | [PHASE_2_PRIORITIZATION_DP.md](docs/PHASE_2_PRIORITIZATION_DP.md), [sorting.py](core/sorting.py), [knapsack.py](core/knapsack.py) | **20 / 20** |
-| **Phase 3** | Route Maker and Graph Processing | Adjacency List graph, Min-Heap Dijkstra algorithm, TSP Nearest Neighbor heuristic, 2-Opt local search improvement, turn-by-turn navigation schedule. | [PHASE_3_GRAPH_TSP.md](docs/PHASE_3_GRAPH_TSP.md), [graph.py](core/graph.py), [router.py](core/router.py) | **20 / 20** |
-| **Phase 4** | Performance Testing and Optimization | Scalability benchmarking across small, medium, and large datasets, runtime charts, Big-O comparison matrix, future optimization analysis. | [PHASE_4_PERFORMANCE.md](docs/PHASE_4_PERFORMANCE.md), [benchmark.py](benchmarks/benchmark.py), `output/*.png` | **20 / 20** |
-| **Phase 5** | Final Report and Demonstration | Working system, terminal output traces, classic Streamlit UI, dispatch manifest, unit test suite. | [PHASE_5_FINAL_REPORT.md](docs/PHASE_5_FINAL_REPORT.md), [app.py](app.py), [main.py](main.py) | **20 / 20** |
-| **Total** | | **Comprehensive Capstone Deliverable** | | **100 / 100** |
+| **Phase 1** | Courier Problem Design and Planning | Mathematical formulation, parcel attribute schema, delivery node & graph design, pipeline architecture. | [PHASE_1_DESIGN.md](docs/PHASE_1_DESIGN.md), [models.py](core/models.py) | **Completed** |
+| **Phase 2** | Package Prioritization and Box Filling | Multi-key MergeSort/QuickSort, 0/1 Knapsack DP recurrence, step-by-step DP table output, backtracking manifest, greedy fractional bound. | [PHASE_2_PRIORITIZATION_DP.md](docs/PHASE_2_PRIORITIZATION_DP.md), [sorting.py](core/sorting.py), [knapsack.py](core/knapsack.py) | **Completed** |
+| **Phase 3** | Route Maker and Graph Processing | Adjacency List graph, Min-Heap Dijkstra algorithm, TSP Nearest Neighbor heuristic, 2-Opt local search improvement, turn-by-turn navigation schedule. | [PHASE_3_GRAPH_TSP.md](docs/PHASE_3_GRAPH_TSP.md), [graph.py](core/graph.py), [router.py](core/router.py) | **Completed** |
+| **Phase 4** | Performance Testing and Optimization | Scalability benchmarking across small, medium, and large datasets, runtime charts, Big-O comparison matrix, future optimization analysis. | [PHASE_4_PERFORMANCE.md](docs/PHASE_4_PERFORMANCE.md), [benchmark.py](benchmarks/benchmark.py), `output/*.png` | **Completed** |
+| **Phase 5** | Final Report and Demonstration | Working system, terminal output traces, classic Streamlit UI, dispatch manifest, unit test suite. | [PHASE_5_FINAL_REPORT.md](docs/PHASE_5_FINAL_REPORT.md), [app.py](app.py), [main.py](main.py) | **Completed** |
+| **Total** | | **Comprehensive Capstone Deliverable** | | **All Phases Verified** |
 
 ---
 

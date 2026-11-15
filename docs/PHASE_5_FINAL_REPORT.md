@@ -4,8 +4,7 @@
 **Lead Developer:** Vibhash Kumar Giri  
 **Contact Email:** vibhash1487@gmail.com  
 **Module:** Final Capstone Report, Demonstration Evidence, and Technical Documentation  
-**Marks Allocation:** 20 Marks  
-**Total Project Marks:** 100 / 100  
+**Status:** Complete & Fully Operational  
 
 ---
 
@@ -261,14 +260,14 @@ python -m unittest discover tests
 
 ## 7. Rubric Compliance Verification
 
-| Evaluation Rubric | Requirement | Implementation Evidence | Self-Score |
+| Phase | Requirement | Implementation Evidence | Status |
 | :--- | :--- | :--- | :---: |
-| **Phase 1 (20 Marks)** | Problem clarity, algorithm selection, data design, route-planning logic. | [docs/PHASE_1_DESIGN.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_1_DESIGN.md) & [core/models.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/models.py) | **20 / 20** |
-| **Phase 2 (20 Marks)** | Parcel sorting, DP table output, selected parcels, packing plan. | [docs/PHASE_2_PRIORITIZATION_DP.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_2_PRIORITIZATION_DP.md), [core/sorting.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/sorting.py), [core/knapsack.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/knapsack.py) | **20 / 20** |
-| **Phase 3 (20 Marks)** | Graph representation, shortest-path output, final route, length calculation. | [docs/PHASE_3_GRAPH_TSP.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_3_GRAPH_TSP.md), [core/graph.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/graph.py), [core/router.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/router.py) | **20 / 20** |
-| **Phase 4 (20 Marks)** | Small & large test cases, runtime charts, correctness evidence, optimization. | [docs/PHASE_4_PERFORMANCE.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_4_PERFORMANCE.md), [benchmarks/benchmark.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/benchmarks/benchmark.py), `output/*.png` | **20 / 20** |
-| **Phase 5 (20 Marks)** | Result explanation, documentation quality, classic UI, demonstration, originality. | [docs/PHASE_5_FINAL_REPORT.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_5_FINAL_REPORT.md), [app.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/app.py), [main.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/main.py) | **20 / 20** |
-| **TOTAL** | Complete Capstone Solution | Fully Verified & Operational | **100 / 100** |
+| **Phase 1** | Problem clarity, algorithm selection, data design, route-planning logic. | [docs/PHASE_1_DESIGN.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_1_DESIGN.md) & [core/models.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/models.py) | **Verified** |
+| **Phase 2** | Parcel sorting, DP table output, selected parcels, packing plan. | [docs/PHASE_2_PRIORITIZATION_DP.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_2_PRIORITIZATION_DP.md), [core/sorting.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/sorting.py), [core/knapsack.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/knapsack.py) | **Verified** |
+| **Phase 3** | Graph representation, shortest-path output, final route, length calculation. | [docs/PHASE_3_GRAPH_TSP.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_3_GRAPH_TSP.md), [core/graph.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/graph.py), [core/router.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/core/router.py) | **Verified** |
+| **Phase 4** | Small & large test cases, runtime charts, correctness evidence, optimization. | [docs/PHASE_4_PERFORMANCE.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_4_PERFORMANCE.md), [benchmarks/benchmark.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/benchmarks/benchmark.py), `output/*.png` | **Verified** |
+| **Phase 5** | Result explanation, documentation quality, classic UI, demonstration, originality. | [docs/PHASE_5_FINAL_REPORT.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_5_FINAL_REPORT.md), [app.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/app.py), [main.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/main.py) | **Verified** |
+| **TOTAL** | Complete Capstone Solution | Fully Verified & Operational | **All Phases Complete** |
 
 ---
 

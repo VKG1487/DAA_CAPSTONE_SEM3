@@ -192,36 +192,57 @@ CLASSIC_CSS = """
 st.markdown(CLASSIC_CSS, unsafe_allow_html=True)
 
 
-# -----------------------------------------------------------------------------
-def render_courier_planning_system():
-    """Renders the full Courier Dispatch Planning Dashboard."""
-    # APPLICATION HEADER
-    # -----------------------------------------------------------------------------
-    st.markdown("""
-    <div class="header-banner">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
-            <div>
-                <div class="header-title">Intelligent Courier Route & Packing Planning System</div>
-                <div class="header-subtitle">
-                    Design and Analysis of Algorithms (DAA) Capstone Project | Integrated Algorithmic Workflow
-                </div>
-                <div class="academic-tag">
-                    Algorithms: Multi-Key Sorting &bull; 0/1 Knapsack DP &bull; Min-Heap Dijkstra &bull; Nearest Neighbor TSP &bull; 2-Opt Local Search
-                </div>
+# =============================================================================
+# APPLICATION TOP HEADER
+# =============================================================================
+st.markdown("""
+<div class="header-banner">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <div>
+            <div class="header-title">Intelligent Courier Route & Packing Planning System</div>
+            <div class="header-subtitle">
+                Design and Analysis of Algorithms (DAA) Capstone Project | Integrated Algorithmic Workflow
             </div>
-            <div style="text-align: right; margin-top: 4px; padding-left: 12px;">
-                <div style="font-size: 13px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif;">Vibhash Kumar Giri</div>
-                <div style="font-size: 11px; color: #4A5568; font-weight: 600;">Lead Algorithm Developer</div>
-                <div style="font-size: 11px; color: #1B365D;"><a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a></div>
-                <div style="font-size: 11px; margin-top: 3px; display: flex; gap: 6px; justify-content: flex-end;">
-                    <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="color: #0A66C2; text-decoration: none; font-weight: 600;">LinkedIn</a> &bull;
-                    <a href="https://github.com/VKG1487" target="_blank" style="color: #24292E; text-decoration: none; font-weight: 600;">GitHub</a> &bull;
-                    <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
-                </div>
+            <div class="academic-tag">
+                Algorithms: Multi-Key Sorting &bull; 0/1 Knapsack DP &bull; Min-Heap Dijkstra &bull; Nearest Neighbor TSP &bull; 2-Opt Local Search
+            </div>
+        </div>
+        <div style="text-align: right; margin-top: 4px; padding-left: 12px;">
+            <div style="font-size: 13px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif;">Vibhash Kumar Giri</div>
+            <div style="font-size: 11px; color: #4A5568; font-weight: 600;">Lead Algorithm Developer</div>
+            <div style="font-size: 11px; color: #1B365D;"><a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a></div>
+            <div style="font-size: 11px; margin-top: 3px; display: flex; gap: 6px; justify-content: flex-end;">
+                <a href="https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/" target="_blank" style="color: #0A66C2; text-decoration: none; font-weight: 600;">LinkedIn</a> &bull;
+                <a href="https://github.com/VKG1487" target="_blank" style="color: #24292E; text-decoration: none; font-weight: 600;">GitHub</a> &bull;
+                <a href="https://leetcode.com/VKG1487" target="_blank" style="color: #B25E00; text-decoration: none; font-weight: 600;">LeetCode</a>
             </div>
         </div>
     </div>
-    """, unsafe_allow_html=True)
+</div>
+""", unsafe_allow_html=True)
+
+# -----------------------------------------------------------------------------
+# HEADER VIEW NAVIGATION (Placed on Header Side)
+# -----------------------------------------------------------------------------
+view_choice = st.radio(
+    "Select System View:",
+    [
+        "🚚 Courier Planning System",
+        "👨‍💻 Know About Developer"
+    ],
+    index=0,
+    horizontal=True,
+    help="Select active dashboard view"
+)
+
+st.markdown("<hr style='margin: 10px 0 20px 0; border: none; border-top: 1px solid #CBD5E1;'>", unsafe_allow_html=True)
+
+
+
+# -----------------------------------------------------------------------------
+def render_courier_planning_system():
+    """Renders the full Courier Dispatch Planning Dashboard."""
+
 
 
     # -----------------------------------------------------------------------------
@@ -433,7 +454,7 @@ def render_courier_planning_system():
     # TAB 1: PHASE 1 — PROBLEM DESIGN AND PLANNING
     # =============================================================================
     with tab1:
-        st.markdown('<div class="phase-badge">PHASE 1: PROBLEM DESIGN AND PLANNING (20 MARKS)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="phase-badge">PHASE 1: PROBLEM DESIGN AND PLANNING</div>', unsafe_allow_html=True)
         st.markdown(r"""
         ### Problem Specification & Mathematical Formulation
         The **Intelligent Courier Planning System** models an end-to-end urban parcel distribution problem.
@@ -489,7 +510,7 @@ def render_courier_planning_system():
     # TAB 2: PHASE 2 — PRIORITIZATION AND BOX FILLING (SORTING & DP KNAPSACK)
     # =============================================================================
     with tab2:
-        st.markdown('<div class="phase-badge">PHASE 2: PACKAGE PRIORITIZATION AND BOX FILLING (20 MARKS)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="phase-badge">PHASE 2: PACKAGE PRIORITIZATION AND BOX FILLING</div>', unsafe_allow_html=True)
         st.markdown("### Step 2.1: Parcel Sorting Comparison")
         st.markdown(r"""
         Parcels are evaluated and ordered using our from-scratch implementations of **MergeSort** (stable, guaranteed $O(N \log N)$)
@@ -579,7 +600,7 @@ def render_courier_planning_system():
     # TAB 3: PHASE 3 — ROUTE MAKER AND GRAPH PROCESSING
     # =============================================================================
     with tab3:
-        st.markdown('<div class="phase-badge">PHASE 3: ROUTE MAKER AND GRAPH PROCESSING (20 MARKS)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="phase-badge">PHASE 3: ROUTE MAKER AND GRAPH PROCESSING</div>', unsafe_allow_html=True)
         st.markdown("### Step 3.1 & 3.2: Shortest Path Network & TSP Delivery Route")
         st.markdown("""
         1. **Dijkstra's Algorithm**: We execute a Min-Heap priority queue implementation of Dijkstra's algorithm to compute the shortest road network distances and turn-by-turn road paths between the depot and each active delivery destination.
@@ -618,7 +639,7 @@ def render_courier_planning_system():
     # TAB 4: PHASE 4 — PERFORMANCE TESTING AND OPTIMIZATION
     # =============================================================================
     with tab4:
-        st.markdown('<div class="phase-badge">PHASE 4: PERFORMANCE TESTING AND OPTIMIZATION (20 MARKS)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="phase-badge">PHASE 4: PERFORMANCE TESTING AND OPTIMIZATION</div>', unsafe_allow_html=True)
         st.markdown("### Algorithmic Complexity & Empirical Profiling")
 
         st.markdown(r"""
@@ -661,7 +682,7 @@ def render_courier_planning_system():
     # TAB 5: PHASE 5 — FINAL REPORT AND DEMONSTRATION
     # =============================================================================
     with tab5:
-        st.markdown('<div class="phase-badge">PHASE 5: FINAL REPORT AND DEMONSTRATION (20 MARKS)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="phase-badge">PHASE 5: FINAL REPORT AND DEMONSTRATION</div>', unsafe_allow_html=True)
         st.markdown("### Official Dispatch Manifest & System Validation")
 
         st.markdown(f"""
@@ -699,12 +720,12 @@ def render_courier_planning_system():
         st.markdown("#### Capstone Rubric Self-Assessment & Verification Checklist")
         chk1, chk2 = st.columns(2)
         with chk1:
-            st.checkbox("Phase 1: Problem Clarity, Data Design & Graph Formalism (20 Marks)", value=True, disabled=True)
-            st.checkbox("Phase 2: MergeSort/QuickSort & 0/1 Knapsack DP Table (20 Marks)", value=True, disabled=True)
-            st.checkbox("Phase 3: Min-Heap Dijkstra & TSP Nearest Neighbor + 2-Opt (20 Marks)", value=True, disabled=True)
+            st.checkbox("Phase 1: Problem Clarity, Data Design & Graph Formalism", value=True, disabled=True)
+            st.checkbox("Phase 2: MergeSort/QuickSort & 0/1 Knapsack DP Table", value=True, disabled=True)
+            st.checkbox("Phase 3: Min-Heap Dijkstra & TSP Nearest Neighbor + 2-Opt", value=True, disabled=True)
         with chk2:
-            st.checkbox("Phase 4: Scalability Benchmarks, Big-O Matrix & Scaling Charts (20 Marks)", value=True, disabled=True)
-            st.checkbox("Phase 5: Complete Report, Demo Traces & Classic UI (20 Marks)", value=True, disabled=True)
+            st.checkbox("Phase 4: Scalability Benchmarks, Big-O Matrix & Scaling Charts", value=True, disabled=True)
+            st.checkbox("Phase 5: Complete Report, Demo Traces & Classic UI", value=True, disabled=True)
 
         # Download dispatch summary
         st.markdown("#### Export Manifest Artifacts")
@@ -751,18 +772,10 @@ def render_courier_planning_system():
 
 
 # -----------------------------------------------------------------------------
-# SIDEBAR NAVIGATION & VIEW ROUTING
+# VIEW DISPATCH ROUTER
 # -----------------------------------------------------------------------------
-st.sidebar.markdown("### Navigation")
-view_choice = st.sidebar.radio(
-    "Select System View:",
-    ["🚚 Courier Planning System", "👨‍💻 Know About Developer"],
-    index=0
-)
-
 if view_choice == "👨‍💻 Know About Developer":
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("#### Developer Profile")
+    st.sidebar.markdown("### Developer Profile")
     if os.path.exists("assets/developer.jpg"):
         st.sidebar.image("assets/developer.jpg", width=120)
     st.sidebar.markdown("""
@@ -772,7 +785,7 @@ if view_choice == "👨‍💻 Know About Developer":
     [LinkedIn](https://www.linkedin.com/in/vibhash-kumar-giri-8a7243381/) &bull; [GitHub](https://github.com/VKG1487) &bull; [LeetCode](https://leetcode.com/VKG1487)
     """)
     st.sidebar.caption("Design and Analysis of Algorithms (DAA) Capstone")
-    
+
     render_know_about_developer_page()
 else:
     render_courier_planning_system()

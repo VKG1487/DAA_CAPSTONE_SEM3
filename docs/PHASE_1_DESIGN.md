@@ -4,7 +4,6 @@
 **Lead Developer:** Vibhash Kumar Giri  
 **Contact Email:** vibhash1487@gmail.com  
 **Module:** Courier Problem Design and Planning  
-**Marks Allocation:** 20 Marks  
 
 ---
 

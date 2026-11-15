@@ -2,7 +2,6 @@
 
 **Course:** Design and Analysis of Algorithms (DAA) Capstone Project  
 **Module:** Performance Testing, Scalability Profiling, and Optimization Analysis  
-**Marks Allocation:** 20 Marks  
 
 ---
 

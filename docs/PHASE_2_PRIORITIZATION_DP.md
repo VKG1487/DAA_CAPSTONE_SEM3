@@ -2,7 +2,6 @@
 
 **Course:** Design and Analysis of Algorithms (DAA) Capstone Project  
 **Module:** Package Prioritization and Box Filling (Sorting & Dynamic Programming)  
-**Marks Allocation:** 20 Marks  
 
 ---
 
