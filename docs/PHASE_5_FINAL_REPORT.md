@@ -270,3 +270,12 @@ python -m unittest discover tests
 | **Phase 5 (20 Marks)** | Result explanation, documentation quality, classic UI, demonstration, originality. | [docs/PHASE_5_FINAL_REPORT.md](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/docs/PHASE_5_FINAL_REPORT.md), [app.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/app.py), [main.py](file:///c:/Users/vibha/Desktop/DAA%20CAPSTONE/main.py) | **20 / 20** |
 | **TOTAL** | Complete Capstone Solution | Fully Verified & Operational | **100 / 100** |
 
+---
+
+## 8. Developer & Contact Information
+- **Lead Developer:** Vibhash Kumar Giri
+- **Email:** [vibhash1487@gmail.com](mailto:vibhash1487@gmail.com)
+- **Role:** Algorithm Architect & Full-Stack Developer
+- **Academic Project:** Design and Analysis of Algorithms (DAA) Capstone Project  
+*&copy; 2026 Vibhash Kumar Giri. All rights reserved.*
+

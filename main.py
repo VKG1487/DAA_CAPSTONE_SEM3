@@ -165,6 +165,9 @@ def run_full_demonstration(scenario_path: str = "data/small_dataset.json", capac
     print("Capstone Demonstration successfully executed! All Phases 1 to 5 verified.")
     print("To launch the interactive classic UI, run:")
     print("    streamlit run app.py")
+    print("-" * 76)
+    print("Developer: Vibhash Kumar Giri | Contact: vibhash1487@gmail.com")
+    print("DAA Capstone Project (c) 2026. All rights reserved.")
     print("=" * 76)
 
 

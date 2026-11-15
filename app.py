@@ -8,6 +8,7 @@ import os
 import sys
 import json
 import time
+import base64
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -337,6 +338,7 @@ with sb_c2:
     <span style="font-size: 11px; color: #4A5568;">Algorithm Developer</span>  
     <a href="mailto:vibhash1487@gmail.com" style="font-size: 11px; color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a>
     """, unsafe_allow_html=True)
+st.sidebar.caption("© 2026 Vibhash Kumar Giri • DAA Capstone")
 
 # -----------------------------------------------------------------------------
 # RUN PIPELINE
@@ -727,3 +729,38 @@ with tab5:
             </div>
         </div>
         """, unsafe_allow_html=True)
+
+
+# =============================================================================
+# GLOBAL APPLICATION FOOTER (Visible across all tabs)
+# =============================================================================
+def get_footer_image_b64(path: str) -> str:
+    if os.path.exists(path):
+        with open(path, "rb") as f:
+            return base64.b64encode(f.read()).decode("utf-8")
+    return ""
+
+_dev_b64 = get_footer_image_b64("assets/developer.jpg")
+_img_markup = f'<img src="data:image/jpeg;base64,{_dev_b64}" style="width: 54px; height: 54px; border-radius: 50%; border: 2px solid #CBD5E1; object-fit: cover; box-shadow: 0 1px 3px rgba(0,0,0,0.08);" alt="Vibhash Kumar Giri" />' if _dev_b64 else ''
+
+st.markdown(f"""
+<div style="margin-top: 55px; padding: 22px 26px; background-color: #F8F9FA; border: 1px solid #E2E8F0; border-top: 2px solid #1B365D; border-radius: 4px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 16px;">
+            {_img_markup}
+            <div>
+                <div style="font-size: 15px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif; margin-bottom: 2px;">
+                    Vibhash Kumar Giri
+                </div>
+                <div style="font-size: 12px; color: #4A5568;">
+                    Lead Developer &bull; Email: <a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; font-weight: 600; text-decoration: underline;">vibhash1487@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: right; font-size: 12px; color: #718096; line-height: 1.5;">
+            <div><strong>Design and Analysis of Algorithms (DAA) Capstone Project</strong></div>
+            <div>&copy; 2026 Vibhash Kumar Giri. All rights reserved.</div>
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
