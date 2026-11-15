@@ -1,0 +1,10 @@
+{
+  "name": "daa-capstone-courier-system",
+  "version": "1.0.0",
+  "description": "Intelligent Courier Route & Packing Planning System - DAA Capstone Project",
+  "scripts": {
+    "build": "python build_vercel.py"
+  },
+  "author": "Vibhash Kumar Giri <vibhash1487@gmail.com>",
+  "license": "MIT"
+}

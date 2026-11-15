@@ -27,11 +27,20 @@ render_know_about_developer_page()
 # =============================================================================
 # GLOBAL APPLICATION FOOTER: DEVELOPER PROFILE ON FOOTER
 # =============================================================================
+try:
+    from core.dev_img_data import DEV_PHOTO_B64
+except ImportError:
+    DEV_PHOTO_B64 = ""
+
+
 def get_footer_image_b64(path: str) -> str:
     if os.path.exists(path):
-        with open(path, "rb") as f:
-            return base64.b64encode(f.read()).decode("utf-8")
-    return ""
+        try:
+            with open(path, "rb") as f:
+                return base64.b64encode(f.read()).decode("utf-8")
+        except Exception:
+            pass
+    return DEV_PHOTO_B64
 
 _dev_b64 = get_footer_image_b64("assets/developer.jpg")
 _img_markup = f'<img src="data:image/jpeg;base64,{_dev_b64}" style="width: 64px; height: 64px; border-radius: 50%; border: 2.5px solid #1B365D; object-fit: cover; box-shadow: 0 1px 4px rgba(0,0,0,0.08);" alt="Vibhash Kumar Giri" />' if _dev_b64 else ''

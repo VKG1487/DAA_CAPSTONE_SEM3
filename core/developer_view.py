@@ -11,13 +11,21 @@ import os
 import base64
 import streamlit as st
 
+try:
+    from core.dev_img_data import DEV_PHOTO_B64
+except ImportError:
+    DEV_PHOTO_B64 = ""
+
 
 def get_image_base64(image_path: str) -> str:
-    """Reads a local image and encodes it to base64 string."""
+    """Reads a local image and encodes it to base64 string, falling back to DEV_PHOTO_B64."""
     if os.path.exists(image_path):
-        with open(image_path, "rb") as f:
-            return base64.b64encode(f.read()).decode("utf-8")
-    return ""
+        try:
+            with open(image_path, "rb") as f:
+                return base64.b64encode(f.read()).decode("utf-8")
+        except Exception:
+            pass
+    return DEV_PHOTO_B64
 
 
 def render_know_about_developer_page():

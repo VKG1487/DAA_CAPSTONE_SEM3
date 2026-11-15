@@ -186,6 +186,24 @@ DAA CAPSTONE/
 
 ---
 
+## Cloud Deployment (Vercel & Streamlit Cloud)
+
+### Option 1: Vercel Deployment (Pre-Configured with Stlite / WebAssembly)
+The repository is fully configured with `vercel.json` and a self-contained `index.html` powered by Stlite (Pyodide WebAssembly Streamlit). It runs serverlessly with zero backend infrastructure needed:
+1. Go to [vercel.com](https://vercel.com/) and sign in with GitHub.
+2. Click **"Add New..."** &rarr; **"Project"**.
+3. Select and import the repository: **`VKG1487/DAA_CAPSTONE_SEM3`**.
+4. Leave all build settings at default (`Framework: Other`, `Root Directory: ./`).
+5. Click **Deploy**. Vercel will host the live web application on your free `*.vercel.app` domain!
+
+### Option 2: Streamlit Community Cloud (Native Python Runtime)
+1. Go to [share.streamlit.io](https://share.streamlit.io/) and log in with your GitHub account.
+2. Click **"New app"**.
+3. Repository: `VKG1487/DAA_CAPSTONE_SEM3` &bull; Branch: `main` &bull; Main file: `app.py`.
+4. Click **Deploy!**
+
+---
+
 ## Lead Developer & Author Information
 
 <table style="border: 1px solid #CBD5E1; border-collapse: collapse; background-color: #FFFFFF; border-radius: 4px;">
