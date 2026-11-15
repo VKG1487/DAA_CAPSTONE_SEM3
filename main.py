@@ -199,3 +199,16 @@ def main():
 if __name__ == "__main__":
     main()
 
+
+# -----------------------------------------------------------------------------
+# VERCEL COMPATIBILITY EXPORTS
+# -----------------------------------------------------------------------------
+def app(environ=None, start_response=None):
+    """Entrypoint export for Vercel Python serverless detector."""
+    if start_response:
+        start_response('200 OK', [('Content-Type', 'text/html; charset=utf-8')])
+    return [b"Intelligent Courier Planning System"]
+
+handler = app
+application = app
+

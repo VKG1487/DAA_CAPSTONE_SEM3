@@ -764,3 +764,20 @@ st.markdown(f"""
     </div>
 </div>
 """, unsafe_allow_html=True)
+
+
+# -----------------------------------------------------------------------------
+# VERCEL COMPATIBILITY EXPORTS
+# -----------------------------------------------------------------------------
+def app(environ=None, start_response=None):
+    """Entrypoint export for Vercel Python serverless detector."""
+    if start_response:
+        start_response('200 OK', [('Content-Type', 'text/html; charset=utf-8')])
+    index_file = os.path.join(BASE_DIR, 'index.html')
+    if os.path.exists(index_file):
+        with open(index_file, 'rb') as f:
+            return [f.read()]
+    return [b"Intelligent Courier Planning System"]
+
+handler = app
+application = app

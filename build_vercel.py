@@ -134,7 +134,26 @@ with open(os.path.join(PROJECT_ROOT, "index.html"), "w", encoding="utf-8") as f:
 # Generate vercel.json
 vercel_config = {
     "version": 2,
-    "cleanUrls": True
+    "builds": [
+        {
+            "src": "index.html",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "assets/**",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/assets/(.*)",
+            "dest": "/assets/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
 }
 
 with open(os.path.join(PROJECT_ROOT, "vercel.json"), "w", encoding="utf-8") as f:
