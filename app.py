@@ -195,12 +195,21 @@ st.markdown(CLASSIC_CSS, unsafe_allow_html=True)
 # -----------------------------------------------------------------------------
 st.markdown("""
 <div class="header-banner">
-    <div class="header-title">Intelligent Courier Route & Packing Planning System</div>
-    <div class="header-subtitle">
-        Design and Analysis of Algorithms (DAA) Capstone Project | Integrated Algorithmic Workflow
-    </div>
-    <div class="academic-tag">
-        Algorithms: Multi-Key Sorting &bull; 0/1 Knapsack DP &bull; Min-Heap Dijkstra &bull; Nearest Neighbor TSP &bull; 2-Opt Local Search
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <div>
+            <div class="header-title">Intelligent Courier Route & Packing Planning System</div>
+            <div class="header-subtitle">
+                Design and Analysis of Algorithms (DAA) Capstone Project | Integrated Algorithmic Workflow
+            </div>
+            <div class="academic-tag">
+                Algorithms: Multi-Key Sorting &bull; 0/1 Knapsack DP &bull; Min-Heap Dijkstra &bull; Nearest Neighbor TSP &bull; 2-Opt Local Search
+            </div>
+        </div>
+        <div style="text-align: right; margin-top: 4px; padding-left: 12px;">
+            <div style="font-size: 13px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif;">Vibhash Kumar Giri</div>
+            <div style="font-size: 11px; color: #4A5568; font-weight: 600;">Lead Algorithm Developer</div>
+            <div style="font-size: 11px; color: #1B365D;"><a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a></div>
+        </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -312,6 +321,22 @@ value_mode = st.sidebar.selectbox(
 )[0]
 
 use_2opt = st.sidebar.checkbox("Enable 2-Opt TSP Local Search", value=True)
+
+# -----------------------------------------------------------------------------
+# SIDEBAR DEVELOPER PROFILE
+# -----------------------------------------------------------------------------
+st.sidebar.markdown("---")
+st.sidebar.markdown("#### Developer Profile")
+sb_c1, sb_c2 = st.sidebar.columns([1, 2])
+with sb_c1:
+    if os.path.exists("assets/developer.jpg"):
+        st.image("assets/developer.jpg", width=75)
+with sb_c2:
+    st.markdown("""
+    **Vibhash Kumar Giri**  
+    <span style="font-size: 11px; color: #4A5568;">Algorithm Developer</span>  
+    <a href="mailto:vibhash1487@gmail.com" style="font-size: 11px; color: #1B365D; text-decoration: none;">vibhash1487@gmail.com</a>
+    """, unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
 # RUN PIPELINE
@@ -675,3 +700,30 @@ with tab5:
         file_name="courier_dispatch_manifest.json",
         mime="application/json"
     )
+
+    st.write("")
+    st.markdown("#### Project Developer & System Architect")
+    dev_col1, dev_col2 = st.columns([1, 4])
+    with dev_col1:
+        if os.path.exists("assets/developer.jpg"):
+            st.image("assets/developer.jpg", width=140)
+    with dev_col2:
+        st.markdown("""
+        <div style="background-color: #FFFFFF; border: 1px solid #E2E8F0; padding: 16px 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+            <div style="font-size: 18px; font-weight: 700; color: #1B365D; font-family: 'Merriweather', Georgia, serif; margin-bottom: 4px;">
+                Vibhash Kumar Giri
+            </div>
+            <div style="font-size: 13px; color: #4A5568; margin-bottom: 6px;">
+                <strong>Role:</strong> Lead Algorithm Architect & Full-Stack Developer
+            </div>
+            <div style="font-size: 13px; color: #4A5568; margin-bottom: 6px;">
+                <strong>Contact Email:</strong> <a href="mailto:vibhash1487@gmail.com" style="color: #1B365D; font-weight: 600; text-decoration: underline;">vibhash1487@gmail.com</a>
+            </div>
+            <div style="font-size: 13px; color: #4A5568; margin-bottom: 8px;">
+                <strong>Project:</strong> Design and Analysis of Algorithms (DAA) Capstone Project
+            </div>
+            <div style="font-size: 12px; color: #718096; line-height: 1.45;">
+                Engineered an end-to-end intelligent courier planning system integrating multi-criteria sorting, 0/1 Knapsack Dynamic Programming, Dijkstra's algorithm with min-heap priority queues, and TSP approximation with 2-Opt local search refinement.
+            </div>
+        </div>
+        """, unsafe_allow_html=True)

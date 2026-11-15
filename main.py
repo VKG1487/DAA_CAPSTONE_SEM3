@@ -21,6 +21,7 @@ from benchmarks.benchmark import run_comprehensive_benchmarks
 def print_header(title: str):
     print("\n" + "=" * 76)
     print(f"  {title.upper()}")
+    print("  Lead Developer: Vibhash Kumar Giri | Contact: vibhash1487@gmail.com")
     print("=" * 76)
 
 
@@ -159,6 +160,7 @@ def run_full_demonstration(scenario_path: str = "data/small_dataset.json", capac
     print(f"  * Total Route Mileage:     {tour_dist:.2f} km")
     print(f"  * Estimated Trip Duration: {summary['estimated_driving_mins']} minutes (driving + delivery stops)")
     print(f"  * Route Sequence:          {' -> '.join(final_tour)}")
+    print(f"  * Lead Developer:          Vibhash Kumar Giri (Email: vibhash1487@gmail.com)")
     print("=" * 76)
     print("Capstone Demonstration successfully executed! All Phases 1 to 5 verified.")
     print("To launch the interactive classic UI, run:")

@@ -187,6 +187,25 @@ DAA CAPSTONE/
 
 ---
 
+## Lead Developer & Author Information
+
+<table style="border: 1px solid #CBD5E1; border-collapse: collapse; background-color: #FFFFFF; border-radius: 4px;">
+  <tr>
+    <td style="padding: 16px; text-align: center; vertical-align: middle; border: none; width: 140px;">
+      <img src="assets/developer.jpg" alt="Vibhash Kumar Giri" width="130" style="border-radius: 4px; border: 1px solid #CBD5E1;" />
+    </td>
+    <td style="padding: 16px; vertical-align: middle; border: none;">
+      <h3 style="margin: 0 0 6px 0; color: #1B365D;">Vibhash Kumar Giri</h3>
+      <p style="margin: 0 0 4px 0; color: #4A5568; font-weight: 600;">Lead Developer & Algorithm Architect</p>
+      <p style="margin: 0 0 4px 0; color: #4A5568;"><strong>Email:</strong> <a href="mailto:vibhash1487@gmail.com">vibhash1487@gmail.com</a></p>
+      <p style="margin: 0 0 4px 0; color: #4A5568;"><strong>Course:</strong> Design and Analysis of Algorithms (DAA) Capstone Project</p>
+      <p style="margin: 0; color: #718096; font-size: 13px;">Responsible for end-to-end mathematical modeling, multi-key sorting, 0/1 Knapsack Dynamic Programming, Dijkstra's algorithm with min-heap priority queues, and 2-Opt TSP approximation.</p>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## Authors & Academic Integrity Statement
-This project was implemented as a comprehensive capstone deliverable for **Design and Analysis of Algorithms (DAA)**. All core algorithms (`MergeSort`, `QuickSort`, `0/1 Knapsack DP`, `Dijkstra`, `Nearest Neighbor TSP`, `2-Opt`) have been coded from fundamental computer science principles.
+This project was implemented by **Vibhash Kumar Giri** as a comprehensive capstone deliverable for **Design and Analysis of Algorithms (DAA)**. All core algorithms (`MergeSort`, `QuickSort`, `0/1 Knapsack DP`, `Dijkstra`, `Nearest Neighbor TSP`, `2-Opt`) have been coded from fundamental computer science principles.
 

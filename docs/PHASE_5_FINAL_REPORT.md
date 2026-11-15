@@ -1,6 +1,8 @@
 # Phase 5: Final Report and System Demonstration
 
 **Course:** Design and Analysis of Algorithms (DAA) Capstone Project  
+**Lead Developer:** Vibhash Kumar Giri  
+**Contact Email:** vibhash1487@gmail.com  
 **Module:** Final Capstone Report, Demonstration Evidence, and Technical Documentation  
 **Marks Allocation:** 20 Marks  
 **Total Project Marks:** 100 / 100  

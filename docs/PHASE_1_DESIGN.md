@@ -1,6 +1,8 @@
 # Phase 1: Courier Problem Design and Planning
 
 **Course:** Design and Analysis of Algorithms (DAA) Capstone Project  
+**Lead Developer:** Vibhash Kumar Giri  
+**Contact Email:** vibhash1487@gmail.com  
 **Module:** Courier Problem Design and Planning  
 **Marks Allocation:** 20 Marks  
 
